@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #DDA853;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.pry-btn {
+    padding: 1rem;
+    font-weight: 600;
+    background-color: #A6CDC6;
+    border: none;
+    border-radius: 0.5rem;
+    color: #16404D;
+    cursor: pointer;
+    transition: background-color 2s ease;
+}
+
+.pry-btn:hover {
+    background-color: #FBF5ED;
+}
+
+.sec-btn {
+    padding: 1rem;
+    font-weight: 600;
+    border: 1px solid #A6CDC6;
+    border-radius: 0.5rem;
+    color: #DDA853;
+    transition: all 2s;
+}
+
+
+#left {
+    display: flex;
+    flex-direction: column;
+    background-color: #16404D;
+    height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#left .logo {
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 6vh;
+}
+
+#sign-up h1 {
+    padding: 0.5rem 0;
+}
+
+#sign-up .text-area {
+    width: 100%;
+    padding: 0.5rem 0.9rem;
+    margin: 0.3rem 0 1rem;
+    line-height: 1.8;
+    background-color: #16404D;
+    border: 1px solid #A6CDC6;
+    border-radius: 0.5rem;
+    color: #DDA853;
+}
+
+#sign-up  .label {
+    margin-bottom: 50px;
+}
+
+#sign-up .pry-btn {
+    width: 100%;
+}
+
+#left .forgot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 0.8rem;
+    margin-bottom: 4vh;
+    line-height: 1.6;
+}
+
+#left a {
+    text-decoration: none;
+    color:#DDA853;
+    
+}
+
+#left a:hover {
+    text-decoration: underline;
+}
+
+#left .footer {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+#right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/smoke-376543_640.jpg') no-repeat center center / cover;
+    color: #DDA853;
+    height: 100vh;
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#showcase p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+#showcase a {
+    text-decoration: none;
+}
+
+#showcase .sec-btn {
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+}
+
+#showcase .sec-btn:hover {
+    background-color: #A6CDC6;
+}
+
+@media (min-width: 1200px){
+    #left {
+        flex: 1;
+    }
+
+    #right {
+        flex: 2;
+    }
+}
+
+@media (max-width: 768px){
+    #right {
+        display: none;
+    }
+    #left {
+        overflow: auto;
+    }
+    #sign-up {
+        margin-bottom: 9vh;
+    }
+
+    #left .forgot {
+        margin-bottom: 6vh;
+        line-height: 2.2;
+    }
+}
+
+
